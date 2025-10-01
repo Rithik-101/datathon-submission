@@ -17,7 +17,7 @@ Reducing avoidable readmissions improves patient outcomes and saves significant 
 
 **Target:** Predict whether a patient will be readmitted within 30 days (`readmitted == '<30'`) — binary classification: *readmit_30d = 1* if `<30`, else *0* (includes `>30` and `NO`).
 
-** Methodology:**
+**Methodology:**
 1. Data collection: download dataset from Kaggle.
 2. Preprocessing: handle missing values, remove/aggregate identifiers, encode categoricals, feature engineering (e.g., prior visits count, medication change flags).
 3. EDA: distributions, correlations, missingness, class balance.
@@ -93,3 +93,4 @@ Plan:
 2. **Medication review:** Patients with many medication changes during admission could benefit from medication counselling and early follow-up.  
 3. **Care pathways:** Develop care pathways for patients identified as high-risk (e.g., discharge case manager involvement).  
 4. **Monitoring & Re-training:** Periodically re-train model on newer data, and monitor fairness across demographic groups (age, gender, race) to avoid biased interventions.
+
